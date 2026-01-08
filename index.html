@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jack Forden</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="navbar" id="myNavbar">
+        <a href="#home" class="active"><i class="fa fa-home"></i> HOME</a>
+        <a href="#about"><i class="fa fa-user"></i> ABOUT</a>
+        <a href="#portfolio"><i class="fa fa-folder"></i> PROJECTS</a>
+        <a href="#courses"><i class="fa fa-folder"></i> COURSES</a>
+        <a href="#publications"><i class="fa fa-folder"></i> PUBLICATIONS</a>
+        <a href="https://github.com/JForden"><i class="fa fa-github"></i> GITHUB</a>
+        <a href="https://www.linkedin.com/in/jack-forden-a1a45920b/"><i class="fa fa-linkedin"></i> LINKEDIN</a>
+        <a href="#" class="icon" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+        <div class="w3-display-middle">
+            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity bounce">WELCOME</span>
+        </div>
+        <div class="scroll-down">
+            <i class="fa fa-arrow-down w3-text-white bounce"></i>
+        </div>
+    </div>
+
+    <!-- Container (About Section) -->
+    <div class="content" id="about">
+        <h3>ABOUT ME</h3>
+        <div class="about-me">
+            <p>
+                I am currently employed at Marquette University as a Doctoral Candidate, aiming to complete my Doctoral
+                Degree by 2025. My primary goal is to excel as an educator and researcher, focusing on educational
+                research. I integrate educational theory and design to optimize learning outcomes for students. My work
+                involves designing sophisticated systems to enhance the quality of computer science education. Notably,
+                systems I have co-designed have been accessed well over 200,000 times, having a direct impact on
+                hundreds of students. When time allows, my interests include the impact of AI on education, embedded
+                systems, compilers, mobile application development, and video game design.
+            </p>
+            <img src="./assets/images/jackimage.jpg" alt="Photo of Jack Forden" class="profile-img">
+        </div>
+    </div>
+
+    <!-- Second Parallax Image with Portfolio Text -->
+    <div class="bgimg-2 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-dark-gray w3-wide"><b>Projects</b></span>
+        </div>
+    </div>
+
+    <!-- Container (Portfolio Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="portfolio">
+        <div class="w3-row-padding w3-center flex-container">
+            <div class="w3-col m6 flex-item">
+                <div class="w3-card-4">
+                    <div class="w3-container">
+                        <h4><b>TA-BOT</b></h4>
+                        <p>
+                            TA-Bot is one of the world's most dynamic code assessment systems. It supports 80+ languages
+                            including single, multiple file, and complex assessment of student-built Operating Systems
+                            and Compilers in a secure code execution sandbox. The System has assessed over 100,000 total
+                            files across three years, in a multitude of courses.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col m6 flex-item">
+                <div class="w3-card-4">
+                    <div class="w3-container">
+                        <h4><b>Embedded Xinu</b></h4>
+                        <p>
+                            Embedded Xinu is an ongoing research and implementation project in the area of Operating
+                            Systems and Embedded Systems. Its original goal was to re-implement and port the Xinu
+                            Operating System to several embedded MIPS platforms. I helped port and build out the RISCV
+                            port of Embedded Xinu which has been used in two semesters of Operating Systems.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Third Parallax Image with Contact Text -->
+    <div class="bgimg-3 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-dark-gray w3-wide"><b>Courses</b></span>
+        </div>
+    </div>
+
+    <div class="content" id="courses">
+        <h3>Courses</h3>
+        <div class="about-me">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Course Name</th>
+                        <th>Semester</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Operating Systems</td>
+                        <td>F2020(TA), S2021(TA), F2022(TA)</td>
+                    </tr>
+                    <tr>
+                        <td>Introductory Programming 1</td>
+                        <td>S2022(TA), F2022(HTA)</td>
+                    </tr>
+                    <tr>
+                        <td>Introductory Programming 2</td>
+                        <td>S2023(HTA)</td>
+                    </tr>
+                    <tr>
+                        <td>Pedagogy of Computer Science</td>
+                        <td style="cursor: pointer; text-decoration: underline; color: blue;"
+                            onclick="window.location.href='./Pedagogy/Spring2024.html'">S2024, 
+                            <span style="cursor: pointer; text-decoration: underline; color: blue;"
+                            onclick="window.location.href='./Pedagogy/Spring2024.html'">F2024</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Compilers</td>
+                        <td style="cursor: pointer; text-decoration: underline; color: blue;"
+                            onclick="window.location.href='./Compilers/Fall2024.html'">F2024</td>
+                    </tr>
+                    <tr>
+                        <td>Principles of Design - Senior Design Capstone</td>
+                        <td style="cursor: pointer; text-decoration: underline; color: blue;"
+                            onclick="window.location.href='./PrinciplesOfDesign/Spring2024.html'">S2025</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Fourth Parallax Image with Contact Text -->
+    <div class="bgimg-4 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-dark-gray w3-wide"><b>Publications</b></span>
+        </div>
+    </div>
+
+    <div class="content" id="publications">
+        <h3>Peer Reviewed Publications</h3>
+        <div class="about-me">
+            <ul>
+                <li>
+                    <a href="https://dl.acm.org/doi/10.1145/3694848.3694854">MiniJava on RISC-V: A Game of Global Compilers Domination</a>
+                    - <span class="publication-type">Paper</span> - published in Jensfest 2024
+                </li>
+                <li>
+                    <a>Exploring the Potential of Locally Run LLMs for
+                        Automated Grading in Introductory Computer Science Courses</a>
+                    - <span class="publication-type">Paper</span> - TO BE PUBLISHED IN FIE 2024s
+                </li>
+                <li>
+                    <a href="https://dl.acm.org/doi/10.1145/3626252.3630959">Using Embedded Xinu to Teach Operating
+                        Systems on Baremetal RISC-V</a>
+                    - <span class="publication-type">Paper</span> - published in SIGCSE 2024
+                </li>
+                <li>
+                    <a href="https://dl.acm.org/doi/10.1145/3617650.3624950">Teaching Students To Use Programming Error
+                        Messages</a>
+                    - <span class="publication-type">Working group</span> - published in COMPED 2023
+                </li>
+                <li>
+                    <a href="https://dl.acm.org/doi/10.1145/3576882.3617930">Experiences with TA-Bot in CS1</a>
+                    - <span class="publication-type">Paper</span> - Published in COMPED 2023
+                </li>
+                <li>
+                    <a href="https://dl.acm.org/doi/10.1145/3545947.3576276">Dynamic Rate Limiting with TA-Bot in
+                        CS1</a>
+                    - <span class="publication-type">Poster</span> - published in SIGCSE 2023
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="bgimg-4 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-dark-gray w3-wide"><b>Blog Posts</b></span>
+        </div>
+    </div>
+    <div class="content" id="publications">
+        <h3>Random Ramblings and Conference Reviews</h3>
+        <div class="about-me">
+            <ul>
+                <li>
+                    <a
+                        hrf="https://open.substack.com/pub/jackforden/p/a-semester-in-the-ge-lab-with-mps?utm_campaign=post&utm_medium=web">A
+                        semester with MPS in the GE Lab</a>
+                </li>
+                <li>
+                    <a
+                        href="https://open.substack.com/pub/jackforden/p/sigcse-2024-review?utm_campaign=post&utm_medium=web">SIGCSE
+                        2024 Review</a></a>
+                </li>
+                <li>
+                    <a href="https://open.substack.com/pub/jackforden/p/comped-2023?utm_campaign=post&utm_medium=web">COMPED
+                        2023 Review</a></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+    </footer>
+
+    <script>
+        // Change style of navbar on scroll
+        window.onscroll = function () {
+            myFunction()
+        };
+        function myFunction() {
+            var navbar = document.getElementById("myNavbar");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                navbar.style.backgroundColor = "#333"; /* Change background color on scroll */
+            } else {
+                navbar.style.backgroundColor = "rgba(0, 0, 0, 0.7)"; /* Reset background color */
+            }
+        }
+
+        // Toggle responsive navbar
+        function toggleMenu() {
+            var x = document.getElementById("myNavbar");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+    </script>
+</body>
+
+</html>
